@@ -12,7 +12,7 @@ angular.module('app', [
  .constant('APP_META', {
      title: 'Web App',
      description: '',
-     icon: 'url'
+     icon: 'dashboard'
  })
  .constant('APP_API', {
      user: '/api/users'
