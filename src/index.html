@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web App</title>
+  <link rel="stylesheet" type="text/css" href="lib.css">
+  <link rel="stylesheet" type="text/css" href="app.css">
+ </head>
+
+ <body>
+  <div class="app app--with-sidebar layout--scroll-vertically" ng-controller="PageCtrl">
+    
+    <!-- Include sidebar template -->
+    <ng-include src="'templates/sidebar.html'"></ng-include>
+    
+    <!-- App router views go here -->
+    <ng-view></ng-view>
+   
+  </div> <!--.app-->
+  
+  <script src="lib.js" type="text/javascript"></script>
+  <script src="app.js" type="text/javascript"></script>
+  
+  <!-- Include sidebar template -->
+  <ng-include src="'icons/icons.svg'"></ng-include>
+  
+ </body>
+
+</html>
