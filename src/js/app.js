@@ -34,11 +34,19 @@ angular.module('app', [
           templateUrl: 'templates/page.home.html',
           controller: 'HomeCtrl'
         })
+        .when('/icons', {
+          title: 'Icon theme',
+          description: 'A list of icons used in the project',
+          url: '#/icons',
+          icon: 'color-lens',
+          templateUrl: 'templates/page.icons.html',
+          controller: 'GenericCtrl'
+        })
         .when('/profile', {
           title: 'Profile',
           description: 'User profile page',
           url: '#/profile',
-          icon: 'user',
+          icon: 'person',
           templateUrl: 'templates/page.profile.html',
           controller: 'ProfileCtrl'
         })

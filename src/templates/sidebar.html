@@ -6,7 +6,7 @@
             <label class="layout--menu-label">{{app.title}}</label>
         </span>
         <ul class="pure-menu-list layout--flex-cell fill">
-            <li class="pure-menu-item" ng-repeat="item in getItems()">
+            <li class="pure-menu-item" ng-repeat="item in getItems()" ng-class="{'pure-menu-selected': item.url === current.url}">
                 <a href="#" ng-href="{{item.url}}" class="pure-menu-link">
                     <ui-icon class="layout--menu-icon" type="{{item.icon}}"></ui-icon>
                     <label class="layout--menu-label">{{item.title}}</label>
