@@ -1,0 +1,34 @@
+<header ng-include="'templates/page.home.toolbar.html'" class="app-toolbar"></header>
+<main class="pure-g app-view">
+    <section class="pure-u-1 pure-u-md-1-2 layout--center-in">
+        <header class="layout--box">
+            <nav class="pure-menu pure-menu-horizontal pure-menu-centered">
+                <ul class="pure-menu-list pure-menu-tabs">
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link active" ng-model="tab" ui-toggle-link="#tab-news" ui-group="tab1">News</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" ng-model="tab" ui-toggle-link="#tab-sports" ui-group="tab2">Sports</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" ng-model="tab" ui-toggle-link="#tab-finance" ui-group="tab3">Finance</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="tab-news" class="layout--hidde-inactive layout--box">
+            <p>News is packaged information about current events happening somewhere else; or, alternatively, news is that which the news industry sells. News moves through many different media, based on word of mouth, printing, postal systems, broadcasting, and electronic communication.</p>
+
+            <p>Common topics for news reports include war, politics, and business, as well as athletic contests, quirky or unusual events, and the doings of celebrities. Government proclamations, concerning royal ceremonies, laws, taxes, public health, and criminals, have been dubbed news since ancient times.</p>
+
+            <p>Humans exhibit a nearly universal desire to learn and share news from elsewhere, which they satisfy by traveling and talking to each other. Technological and social developments, often driven by government communication and espionage networks, have increased the speed with which news can spread, as well as influenced its content. The genre of news as we know it today is closely associated with the newspaper, which originated in China as a court bulletin and spread, with paper and printing press, to Europe.</p>
+        </div>
+        <div id="tab-sports" class="layout--hidde-inactive layout--box">
+            <p>Sport (UK) or sports (US) are all forms of usually competitive physical activity or games which,[1] through casual or organised participation, aim to use, maintain or improve physical ability and skills while providing enjoyment to participants, and in some cases, entertainment for spectators.[2] Usually the contest or game is between two sides, each attempting to exceed the other. Some sports allow a tie game; others provide tie-breaking methods, to ensure one winner and one loser. A number of such two-sided contests may be arranged in a tournament producing a champion. Many sports leagues make an annual champion by arranging games in a regular sports season, followed in some cases by playoffs. Hundreds of sports exist, from those between single contestants, through to those with hundreds of simultaneous participants, either in teams or competing as individuals. In certain sports such as racing, many contestants may compete, each against all with one winner.</p>
+        </div>
+        <div id="tab-finance" class="layout--hidde-inactive layout--box">
+            <p>Finance is a field that deals with the study of investments. It includes the dynamics of assets and liabilities over time under conditions of different degrees of uncertainty and risk. Finance can also be defined as the science of money management. A key point in finance is the time value of money, which states that purchasing power of one unit of currency can vary over time. Finance aims to price assets based on their risk level and their expected rate of return. Finance can be broken into three different sub-categories: public finance, corporate finance and personal finance.</p>
+        </div>
+    </section>
+</main>
+    

@@ -1,0 +1,18 @@
+<aside id="appSidebar" class="app-sidebar" ng-controller="SidebarCtrl">
+    <nav class="pure-menu layout--menu-list layout--flex-column layout--scroll-vertically">
+        <span class="pure-menu-heading layout--menu-header">
+            <a href="#" class="app-sidebar--menu-button" ui-toggle="expanded" ui-toggle-link="appSidebar"><ui-icon type="back"></ui-icon></a>
+            <ui-icon class="layout--menu-icon" type="{{app.icon}}"></ui-icon>
+            <label class="layout--menu-label">{{app.title}}</label>
+        </span>
+        <ul class="pure-menu-list layout--flex-cell fill">
+            <li class="pure-menu-item" ng-repeat="item in getItems()">
+                <a href="#" ng-href="{{item.url}}" class="pure-menu-link">
+                    <ui-icon class="layout--menu-icon" type="{{item.icon}}"></ui-icon>
+                    <label class="layout--menu-label">{{item.title}}</label>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="app-sidebar--overlay"></div>
+</aside>

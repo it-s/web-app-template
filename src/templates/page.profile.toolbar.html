@@ -1,0 +1,36 @@
+
+    <nav class="pure-menu pure-menu-horizontal layout--flex-row layout--menu-row">
+     <ul class="pure-menu-list layout--flex-cell fill">
+      <li class="pure-menu-heading app-toolbar--menu-button">
+       <ui-icon type="menu"></ui-icon>
+      </li>
+      <li class="pure-menu-heading app-title">
+       <label class="app-title--label">{{page.title}}</label>
+       <label class="app-title--description">{{page.description}}</label>
+      </li>
+      <li class="pure-menu-item">
+       <a href="#" class="pure-menu-link" ui-tooltip="Edit">
+        <ui-icon class="layout--menu-icon" type="edit"></ui-icon>
+       </a>
+      </li>
+      <li class="pure-menu-item">
+       <a href="#" class="pure-menu-link" ui-tooltip="Delete">
+        <ui-icon class="layout--menu-icon" type="delete"></ui-icon>
+       </a>
+      </li>
+     </ul>
+     <ul class="pure-menu-list layout--flex-cell">
+      <li class="pure-menu-item">
+       <label for="option-one" class="pure-menu-control">
+        <ui-switch ng-model="a" ui-attach-label></ui-switch>
+        Follow
+       </label>
+      </li>
+      <li class="pure-menu-item">
+       <a href="#" class="pure-menu-link">
+        <ui-icon class="layout--menu-icon" type="save"></ui-icon>
+        <label class="layout--menu-label">Save</label>
+       </a>
+      </li>
+     </ul>
+    </nav>
